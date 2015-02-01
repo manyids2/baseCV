@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( toolHSV )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( toolHSV toolHSV.cpp )
+target_link_libraries( toolHSV ${OpenCV_LIBS} )
